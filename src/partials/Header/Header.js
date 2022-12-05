@@ -1,23 +1,20 @@
 import {
 AppBar,
- Toolbar, 
+Toolbar, 
 Typography,
 Button, 
 IconButton, 
-MenuIcon 
+MenuIcon,
 } from '@material-ui/icons/Menu'
 
-
 import MenuIcon from '@material-ui/icons/menu'
-import useStyle from './Header.style'
-
 
 const Header = () => {
     const classes = useStyles()
 
     return (
    
-        <AppBar position="static">
+        <AppBar position="static" color= "secondary">
             <Toolbar>
                 <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
                     <MenuIcon />
