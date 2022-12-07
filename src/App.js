@@ -5,13 +5,19 @@ import {
 } from 'react-router-dom'
 
 import TemplateDeFouylt from'./templates/Defoult'
-import Home from './pages/home';
+import TemplatePage from './templates/Page'
+
+import Customers from './pages/Customers'
+import Home from './pages/home'
 
 const App = () => {
    return (
     <TemplateDeFouylt>
       <Router>
         <Switch>
+          <Route path="/customers">
+            <TemplatePage titloe="Clientes" component={Customers}/>
+          </Route>
           <Route path="/">
             <Home />
           </Route>
